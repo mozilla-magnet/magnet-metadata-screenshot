@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  img(src=path)
+  p Main color
+  p(style='background-color: rgb(' + mainColor[0] + ',' + mainColor[1] + ',' + mainColor[2] + ')') &nbsp;
+  p Palette
+  - each color in palette
+    p(style='border: 1px solid black; background-color: rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')') &nbsp;
